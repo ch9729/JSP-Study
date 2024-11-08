@@ -31,6 +31,7 @@ function deletePost() {
 <jsp:include page="../Common/Link.jsp" />
 <h2>회원제 게시판 - 상세 보기(View)</h2>
 <form name="writeFrm">
+<!-- hidden 화면에는 안보이는 입력이고 미리 입력된 값 num=글번호 전송 -->
     <input type="hidden" name="num" value="<%= num %>" />  <!-- 공통 링크 -->
 
     <table border="1" width="90%">

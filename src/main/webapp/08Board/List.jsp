@@ -32,7 +32,7 @@ dao.close();  // DB 연결 닫기
     <jsp:include page="../Common/Link.jsp" />  <!-- 공통 링크 -->
 
     <h2>목록 보기(List)</h2>
-    <!-- 검색폼 --> 
+    <!-- 검색폼 action 속성이 없을경우 원래 주소로 요청 --> 
     <form method="get">  
     <table border="1" width="90%">
     <tr>

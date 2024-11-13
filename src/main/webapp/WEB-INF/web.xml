@@ -87,5 +87,29 @@
     <servlet-name>HelloServlet</servlet-name>
     <url-pattern>/12Servlet/HelloServlet.do</url-pattern>
   </servlet-mapping>
+  
+   <!-- 서블릿 매핑 2(예제 12-7) -->
+  <servlet>
+    <servlet-name>DirectServletPrint</servlet-name>
+    <servlet-class>servlet.DirectServletPrint</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DirectServletPrint</servlet-name>
+    <url-pattern>/12Servlet/DirectServletPrint.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 서블릿 매핑 3(예제 12-14) -->
+  <servlet>
+    <servlet-name>MemberAuth</servlet-name>
+    <servlet-class>servlet.MemberAuth</servlet-class>
+    <init-param>
+      <param-name>admin_id</param-name>
+      <param-value>nakja</param-value>
+    </init-param>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>MemberAuth</servlet-name>
+    <url-pattern>/12Servlet/MemberAuth.mvc</url-pattern>
+  </servlet-mapping>
   	
   </web-app>
